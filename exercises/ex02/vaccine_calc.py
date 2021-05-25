@@ -46,5 +46,5 @@ days_needed_rounded: int = round(days_needed)
 days_needed_str: str = str(days_needed_rounded)
 # print(days_needed)
 goal_date: datetime = today + timedelta(days_needed)
-print("We will reach " + target_per + "% vaccination in " 
-+ days_needed_str + " days, which falls on " + (goal_date.strftime("%B %d, %Y")))
+print("We will reach " + target_per + "% vaccination in " + 
+    days_needed_str + " days, which falls on " + (goal_date.strftime("%B %d, %Y")))
