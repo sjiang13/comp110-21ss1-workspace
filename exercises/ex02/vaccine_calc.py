@@ -40,11 +40,11 @@ remaining_doses_needed: float = (target_vaccines_needed - administered_doses_int
 # remaining_doses_needed_round: int = round(remaining_doses_needed)
 # print("rounded:" + str(remaining_doses_needed_round))
 days_needed: float = remaining_doses_needed / dose_per_day_int
-print(days_needed)
+# print(days_needed)
 
 days_needed_rounded: int = round(days_needed)
 days_needed_str: str = str(days_needed_rounded)
 # print(days_needed)
 goal_date: datetime = today + timedelta(days_needed)
-print("We will reach " + target_per + "% vaccination in " + 
-    days_needed_str + " days, which falls on " + (goal_date.strftime("%B %d, %Y")))
+strgoal: datetime = goal_date.strftime("%B %d, %Y")
+print("We will reach " + target_per + "% vaccination in " + days_needed_str + " days, which falls on " + strgoal)
