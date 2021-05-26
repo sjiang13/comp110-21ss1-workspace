@@ -27,9 +27,6 @@ else:
         fortune = "Good news is in your future."
     else: 
         fortune = "Someone important will appear in your life."
-
-
-
 print("Your fortune cookie says..")
 print(fortune)
 print("Now, go spread positive vibes!")
