@@ -20,7 +20,3 @@ while input_times > 0:
     input_beat = input_spacing
 
 print(final_str)
-
-
-
-# print(final_str)
