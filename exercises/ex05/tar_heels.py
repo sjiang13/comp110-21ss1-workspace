@@ -10,7 +10,10 @@ def main() -> None:
     print(tar_heels(choice))
 
 # TODO 1: Define the tar_heels function, and its logic, here.
-def tar_heels(choice: int):
+
+
+def tar_heels(choice: int) -> str:
+    """Returns str based on division."""
     if choice % 2 == 0 and choice % 7 == 0:
         return "TAR HEELS"
     elif choice % 2 == 0:
@@ -19,6 +22,7 @@ def tar_heels(choice: int):
         return "HEELS"
     elif choice % 2 != 0 and choice % 7 != 0:
         return "CAROLINA"
+
 
 if __name__ == "__main__":
     main()
