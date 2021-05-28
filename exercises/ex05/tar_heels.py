@@ -22,6 +22,7 @@ def tar_heels(choice: int) -> str:
         return "HEELS"
     elif choice % 2 != 0 and choice % 7 != 0:
         return "CAROLINA"
+    return None
 
 
 if __name__ == "__main__":
